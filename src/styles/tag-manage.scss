@@ -1,0 +1,23 @@
+// 标签组头部操作按钮
+.tag-header-form {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  /deep/.el-form-item {
+    margin-right: 10px;
+    margin-bottom: 0;
+    &:last-child {
+      margin-right: 0;
+    }
+    .el-form-item__content {
+      display: flex;
+      align-items: center;
+      .el-form-item__label {
+        padding: 0;
+      }
+    }
+    .el-input {
+      margin-right: 10px;
+    }
+  }
+}

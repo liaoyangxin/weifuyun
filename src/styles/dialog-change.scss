@@ -1,0 +1,57 @@
+// 弹窗样式
+.el-dialog-change {
+  .el-dialog {
+    border-radius: 4px;
+    overflow: hidden;
+    .el-dialog__header {
+      padding: 0;
+      height: 64px;
+      background: #f5f5f5;
+      position: relative;
+      display: flex;
+      align-items: center;
+      .el-dialog__title {
+        color: #222222;
+        font-size: 16px;
+        font-family: Microsoft YaHei-Regular, Microsoft YaHei;
+        margin-left: 20px;
+      }
+      .el-dialog__headerbtn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        .el-dialog__close {
+          font-weight: 700;
+          width: 14px;
+          height: 14px;
+          &::before {
+            color: #4e5969 !important;
+          }
+        }
+      }
+    }
+    .el-dialog__footer {
+      padding: 20px;
+      .el-button {
+        border-radius: 4px;
+        font-size: 14px;
+        height: 32px;
+        padding: 0 24px;
+        line-height: 32px;
+        span {
+          font-family: Microsoft YaHei-Regular, Microsoft YaHei;
+        }
+        &:first-child {
+          border-color: #f5f5f5;
+          background-color: #f5f5f5;
+          color: #222222;
+        }
+        &:last-child {
+          color: #ffffff;
+          border-color: #06a17e;
+          background-color: #06a17e;
+        }
+      }
+    }
+  }
+}

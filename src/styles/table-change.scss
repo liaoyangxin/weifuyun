@@ -1,0 +1,37 @@
+// 表格样式更改
+.el-table-change {
+  .el-table__body-wrapper {
+    // 去掉原本的空状态
+    .el-table__empty-block {
+      display: none;
+    }
+    // 调整新空状态高度
+    .el-table__append-wrapper {
+      height: 100%;
+    }
+  }
+  // 去除表的底部边框
+  &::before {
+    display: none;
+  }
+  tr {
+    // 改变表的hover效果
+    &:hover {
+      td {
+        background: #f2fcff !important;
+      }
+    }
+    // 解决表头第一列复选框对不齐问题
+    th {
+      &:first-child {
+        .cell {
+          padding: 0 14px;
+        }
+      }
+    }
+    // 改变每一行的底边框颜色
+    td {
+      border-color: #e6e6e6 !important;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+// 输入框样式
+.el-input-change {
+  input {
+    height: 40px;
+    font-size: 14px;
+    font-family: Microsoft YaHei-Regular, Microsoft YaHei;
+    color: #222222;
+    border-color: #e6e6e6;
+    &:focus {
+      border-color: #06a17e;
+    }
+    &::placeholder {
+      color: #999999;
+    }
+  }
+  .el-input__suffix {
+    display: flex;
+    align-items: center;
+    margin-right: 7px;
+    .el-icon-error {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      color: #cccccc;
+    }
+  }
+}
+// 下拉框样式更改 下方选择层
+.el-select-dropdown__list {
+  padding: 4px 0 !important;
+  .el-select-dropdown__item {
+    span {
+      color: #222222 !important;
+    }
+    &.selected {
+      background: #f5f5f5 !important;
+      color: #222 !important;
+      span {
+        color: #222222 !important;
+        font-weight: normal;
+      }
+    }
+    &:hover {
+      background: #ffffff;
+    }
+  }
+}
+// 下拉框头部
+.el-select-change {
+  width: 220px;
+  .el-input__inner {
+    width: 100%;
+    color: #222222 !important;
+  }
+}
+// 单选框样式
+.el-radio-change {
+  color: #222;
+  .el-radio__input.is-checked .el-radio__inner {
+    border-color: #06a17e;
+    background: #06a17e;
+  }
+  &.is-checked .el-radio__label {
+    color: #222;
+  }
+}
